@@ -35,11 +35,13 @@ Requirements :
     )
     ```
 
-3. Add ```IMAPAUTH_HOST``` in your settings
+3. Add ```IMAPAUTH_HOST``` in your settings and (optionally) the ```IMAPAUTH_PORT```:
 
     ```
     IMAPAUTH_HOST = 'my_imap_host'
+    IMAPAUTH_PORT = 995
     ```
+Note: the ```IMAPAUTH_PORT``` will fallback to the default IMAP over SSL port and then to the IMAP default port if not differently specified.
 
 
 Usage
